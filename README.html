@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=tab, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .warpper {
+            display: flex;
+            justify-content: center;
+        }
+
+        table tr td,
+        th {
+            font-family: Tahoma;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        table tr .td-info {
+            color: #0051C6;
+        }
+        a:hover {
+            color: #ff6600;
+            transition: color 0.2s linear;
+        }
+        .contaiter-table {
+            border: 1px solid #b5b6b5;
+            padding-top: 1px;
+            background-color: #fff;
+        }
+
+        .table tr td:last-child {
+            background: #b5b6b5;
+            width: 1px;
+        }
+
+        .border {
+            width: 1px;
+            background-color: #b5b6b5;
+        }
+
+        .th-heading {
+            font-size: 11px;
+            padding-left: 10px;
+            color: #fff;
+        }
+        .header__navbar-link {
+            color:#fff;
+            /* transition: color 0.2s linear; */
+        }
+        td a{
+           font-size: 11px;
+           text-decoration: none;
+            color:#2F87C5;
+
+        }
+    </style>
+        <!-- /* <td>&nbsp;</td> */ -->
+</head>
+
+<body>
+    <div class="warpper" style=" display: flex; justify-content: center;">
+        <table cellspacing="0" cellpadding="0" width="1002">
+            <tbody>
+                <tr>
+                    <td height="24">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td background="http://online.tdc.edu.vn/Portlets/UIS_MySpace/Images/TDC.jpg" style="width: 1002px; height: 143px;"></td>
+                </tr>
+                <tr>
+                    <td height="31" valign="bottom" bgcolor="#18558D">
+                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td height="31">
+                                        <table border="0" width="650" align="right" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center">
+                                                        <a class="header__navbar-link" href="">Trang chủ</a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <img src="http://online.tdc.edu.vn/images/line_menu_ver.gif" width="1" height="30" alt="" />
+                                                    </td>
+                                                    <td align="center">
+                                                        <a class="header__navbar-link" href="">Chương trình đào tạo</a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <img src="http://online.tdc.edu.vn/images/line_menu_ver.gif" width="1" height="30" alt="" />
+                                                    </td>
+                                                    <td align="center">
+                                                        <a class="header__navbar-link" href="">Văn bản</a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <img src="http://online.tdc.edu.vn/images/line_menu_ver.gif" width="1" height="30" alt="" />
+                                                    </td>
+                                                    <td align="center">
+                                                        <a class="header__navbar-link" href="">Tra cứu Văn bằng</a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <img src="http://online.tdc.edu.vn/images/line_menu_ver.gif" width="1" height="30" alt="" />
+                                                    </td>
+                                                    <td align="center">
+                                                        <a class="header__navbar-link" href="">Hướng dẫn</a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <img src="http://online.tdc.edu.vn/images/line_menu_ver.gif" width="1" height="30" alt="" />
+                                                    </td>
+                                                    <td align="center">
+                                                        <a class="header__navbar-link" href="">Đóng học phí</a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <img src="http://online.tdc.edu.vn/images/line_menu_ver.gif" width="1" height="30" alt="" />
+                                                    </td>
+                                                    <td width="120">&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td valign="bottom" width="200">
+                                        <table cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img border="0" src="http://online.tdc.edu.vn/images/left_b_login.gif" width="5" height="25">
+                                                    </td>
+                                                    <td background="http://online.tdc.edu.vn/images/bg_b_login.gif" class="menutop" style="cursor: pointer;display: block;padding: 0 10px;margin-top: 0px;height: 25px;line-height: 25px;">
+                                                        <a class="header__navbar-link">Đăng Thoát</a>
+                                                    </td>
+                                                    <td>
+                                                        <img border="0" src="http://online.tdc.edu.vn/images/right_b_login.gif" width="5" height="25">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="223">
+                                        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr height="56" bgcolor="#EDF2F5" style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                                    <td width="42" align="center" style="border-top-left-radius: 8px;">
+                                                        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/promotion.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td class="td-select" style="border-top-right-radius: 8px;">
+                                                                       <a href="">THANH CÔNG CỤ</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/home.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td class="td-select">
+                                                                        <a href="">Trang của bạn</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- Thanh pham trang cua ban -->
+                                                <tr>
+                                                    <td>
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td height="20" bgcolor="#E3EBEF" align="center">
+                                                                        <table width="85%" border="0" cellpadding="3" cellspacing="0">
+                                                                            <tbody>
+                                                                                <tr height="25">
+                                                                                    <td align="right" style=" width: 14%; height: 25px;">
+                                                                                        <img src="http://online.tdc.edu.vn/images/icon_orange.gif" alt="" width="4" height="4" style="padding-bottom:2px" />
+                                                                                    </td>
+                                                                                    <td class="td-select" width="86%">
+                                                                                        <a href="">Hộp thư</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20" bgcolor="#E3EBEF" align="center">
+                                                                        <table width="85%" border="0" cellpadding="3" cellspacing="0">
+                                                                            <tbody>
+                                                                                <tr height="25">
+                                                                                    <td align="right" style=" width: 14%; height: 25px;">
+                                                                                        <img src="http://online.tdc.edu.vn/images/icon_orange.gif" alt="" width="4" height="4" style="padding-bottom:2px" />
+                                                                                    </td>
+                                                                                    <td class="td-select" width="86%">
+                                                                                        <a href="">Thông tin cá nhân</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20" bgcolor="#E3EBEF" align="center">
+                                                                        <table width="85%" border="0" cellpadding="3" cellspacing="0">
+                                                                            <tbody>
+                                                                                <tr height="25">
+                                                                                    <td align="right" style=" width: 14%; height: 25px;">
+                                                                                        <img src="http://online.tdc.edu.vn/images/icon_orange.gif" alt="" width="4" height="4" style="padding-bottom:2px" />
+                                                                                    </td>
+                                                                                    <td class="td-select" width="86%">
+                                                                                        <a href="">Thông tin học phí/lệ phí</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20" bgcolor="#E3EBEF" align="center">
+                                                                        <table width="85%" border="0" cellpadding="3" cellspacing="0">
+                                                                            <tbody>
+                                                                                <tr height="25">
+                                                                                    <td align="right" style=" width: 14%; height: 25px;">
+                                                                                        <img src="http://online.tdc.edu.vn/images/icon_orange.gif" alt="" width="4" height="4" style="padding-bottom:2px" />
+                                                                                    </td>
+                                                                                    <td class="td-select" width="86%">
+                                                                                        <a href="">Thông báo nợ sách</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/text_page.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td class="td-select"> 
+                                                                        <a href="">Chương trình đào tạo</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/pencil.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td> 
+                                                                        <a href="">Đăng ký học phần</a> 
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/calendar.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Thời khóa biểu - Lịch thi</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/marks.gif" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Ý kiến - thảo luận</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACGElEQVRoge3Zz0rjQBwH8D6Cj9BH8BF62BEPOeQguDteComvsLBQPRWEZWEieBBdHRZTPFQyWFYQ1lLYpSB4CCr+OVTd6mXBQ3Yhp3r4eYix6Z/UbTLJtGV+8LuEdOb76SQQ+GUyCRShbMowGTFMyzZM684wGSWUZZPYi3t54S3HMC3oamcsEIbJ6Etgm5TYNNkp5wzTqnnXGBWd783yHhkLyE45518jlGX9UxASKpfPT80s6ARh3UZYB7/7PCavXSDrc/7vl1a/fhx0b3BNhLU7hDU6+z6f5RYeYd3p3ORtwJdv5acCWZ9bXt1c+7y9++//Aa/tcEEgrNGQDQYChumw9RHW4r8z3pF6C9ZPbAgWL0CwTi+vO06BA6D9j3TXNjuMHb50UO1ZN7hnooCHP4+xEHs/fsLFTVMcIKmSAAmQAAmQgMkH3Py9HV/AUbMK898XYL9RGT+AH15hKihM7YsYWUB3eIWp8OlXYTwAYeHdlisW4LZcOGr2fhJHDZ8qwG25UDxeAYWpsHG2xSV8qgA/vN/diCjhUwXsNyod4RSmQulqN1b4VAEAAGeP5z2I4vFK5PCpA8IQUcMLAQxCDBteGKAfIkp4oYAgImp44QAfETX8SADilgRIgARIwEQB2gOOxu/7xMPXT+wggMeAI3zElHS/w4ssNuBlyCcC4CC8OB0b0EZoFIVMK7kH/6DXuI1ZZcma8HoG2oN3UQysDt4AAAAASUVORK5CYII="
+                                                                            width="24"
+                                                                            height="24"
+                                                                            alt=""
+                                                                        />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Cố vấn học tập</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/029.png" width="24" height="24" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Nhập văn bằng THPT/THCS </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/qchv.jpg" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Quy chế - học vụ </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/details.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Sinh viên vi phạm </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/commit.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Sinh viên cam kết </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/renluyen.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Điểm Rèn Luyện </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/accept.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Ghi danh môn tự chọn </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/graduation.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Đăng ký xét tốt nghiệp </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/info.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Hướng dẫn sử dụng </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="56" bgcolor="#EDF2F5">
+                                                    <td width="42" align="center">
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/favorite.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="">Thoát </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div align="center">
+                                                            <table width="85%" cellspacing="0" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="color:#696969; height: 25px;" align="left">
+                                                                            Lượt truy cập:
+                                                                        </td>
+                                                                        <td style="color:#696969; height: 25px;" align="left">279438</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="2" class="border" height="1" bgcolor="rgb(219, 219, 219);"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="color:#696969; height: 25px;" align="left">
+                                                                            Đang online:
+                                                                        </td>
+                                                                        <td style="color:#696969; height: 25px;" align="left">170</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td width="10"></td>
+                                    <td width="749" valign="top">
+                                        <table width="100%" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="5">
+                                                        <img src="http://online.tdc.edu.vn/images/left_title.gif" alt="" style="height: 45px; width: 5px;" />
+                                                    </td>
+                                                    <td style="display: block;height: 45px;" background="http://online.tdc.edu.vn/images/bg_title.gif">
+                                                        <table height="100%" cellspacing="0" cellpadding="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="42" align="center">
+                                                                        <img src="http://online.tdc.edu.vn/images/user.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                    <td class="th-heading" style="color:#2F87C5;">THÔNG TIN CÁ NHÂN</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td width="5">
+                                                        <img src="http://online.tdc.edu.vn/images/right_title.gif" alt="" style="height: 45px; width: 5px;" />
+                                                    </td>
+                                                </tr>
+                                                <tr height="15">
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table align="right" class="contaiter-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2" style="height: 1px; background:#b5b6b5;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 45%;" vailgn="top">
+                                                        <table class="table" style="width: 97%" cellpadding="3" cellspacing="1">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th colspan="3" align="left" height="30" bgcolor="#2F87C5" class="th-heading">
+                                                                        THÔNG TIN SINH VIÊN
+                                                                    </th>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" style="background-color: #b5b6b5; width: 1px;"></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3"></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Mã số sinh viên</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">23211TT3666</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Họ và tên</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Lê Hữu Tín</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ngày sinh</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">06/06/2005</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Nơi sinh</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Bình Định</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Giới tính</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Nam</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Dân tộc</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Kinh</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tôn giáo</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Không</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Số CMND/CCCD</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">052205011602</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ngày cấp CMND/CCCD</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">13/05/2021</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Nơi cấp CMND/CCCD</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Cục Cảnh Sát</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Đoàn/đảng</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Không tham gia</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ngày vào</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info"></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tình trạng học</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Còn học</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Quốc gia</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Quốc gia</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tỉnh/Thành phố</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Bình Định</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Quận/huyện</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">H Phù Cát</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Phường/xã</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">thị trấn Cát Tiến</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Địa chỉ thường trú</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">thôn Phú Hậu</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td class="td-info"></td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td class="td-info"></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" style="background:#b5b6b5; height:2px;"></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th height="30" colspan="3" bgcolor="#3299F7" class="th-heading">THÔNG TIN KHÓA HỌC</th>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Khóa học</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">CDCQ-K23</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Lớp sinh viên</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">CD23TT7</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tên cố vấn học tập</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Nguyễn Thanh Vũ</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Điện thoại cố vấn học tập</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">0916774677</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Email Cố vấn học tập</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">vunt@tdc.edu.vn</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3">&nbsp;</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td width="55%" valign="top" ;="">
+                                                        <table width="97%" cellpadding="3" cellspacing="1" ;="">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="3" align="center">
+                                                                        <div class="img-warpper" style="height: 128px; width: 93px; border: 3px dashed #0A2081">
+                                                                            <img
+                                                                                src="hhttps://plus.unsplash.com/premium_photo-1674086524511-567ad049a61a?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
+                                                                                alt="anh Sinh Vien"
+                                                                            />
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th colspan="3" align="left" height="25" bgcolor="#FF3300" class="th-heading">THÔNG TIN LIÊN LẠC</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="3" class="border"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th colspan="3" style="color: red; font-weight: 300; font-family: 'Times New Roman', Times, serif; font-size: 16px;" align="left">* Thông tin liên lạc của sinh viên:</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Điện thoại</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Di động</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">0367842425</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Email reset mật khẩu</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">jushlehuutinads@gmail.com</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Địa chỉ</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">thôn Phú Hậu, thị trấn Cát Tiến, H Phù Cát, Bình Định</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Ghi chú</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th colspan="3" style="color: red; font-weight: 300; font-family: 'Times New Roman', Times, serif; font-size: 16px;" align="left">
+                                                                        * Thông tin liên lạc người thân của sinh viên (khi không liên lạc được với sinh viên):
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Họ tên</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Lê Văn Cường</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Điện thoại</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">03925723xx</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>- Địa chỉ</td>
+                                                                    <td>:</td>
+                                                                    <td class="td-info">Phú Hậu / Cát Tiến / Phù Cát / Bình Định</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table style="background:#b5b6b5;width: 100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center"><img src="http://online.tdc.edu.vn/images/lock.png" alt="" style="width: 24px; height: 24px;" /></td>
+                                                                    <td>
+                                                                        <a href="">Đổi mật khẩu</a>
+                                                                    </td>
+                                                                    <td class="td-info">
+                                                                        <img src="http://online.tdc.edu.vn/images/accept_page.png" width="24" height="24" alt="" />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="52">
+                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td style="color:#737373;font-weight:200">
+                                        Copyright © 2011 TDC - All Rights Reserved
+                                    </td">
+                                    <td align="right" style="color:#737373;font-weight:200">Powered and Designed by <a href="" style="color:#737373; text-decoration: underline;">PSC Việt Nam</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+</body>
+
+</html>
